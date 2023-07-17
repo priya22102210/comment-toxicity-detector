@@ -1,8 +1,8 @@
 # comment-toxicity-detector
 This Python script demonstrates the process of training a deep learning model for toxicity classification of text comments. It utilizes the Jigsaw Toxic Comment Classification Challenge dataset, which contains labeled comments indicating their toxicity levels.
-Sure! Here's an example of the README section content for your code on GitHub:
 
-```
+
+
 # Toxicity Classification of Text Comments
 
 This project focuses on training a deep learning model to classify the toxicity levels of text comments. It utilizes the Jigsaw Toxic Comment Classification Challenge dataset to train the model.
@@ -20,9 +20,8 @@ To run the code, you need to install the following dependencies:
 
 You can install the required packages by running the following command:
 
-```
 pip install tensorflow tensorflow-gpu pandas matplotlib sklearn gradio jinja2
-```
+
 
 ## Usage
 
@@ -52,6 +51,6 @@ Contributions to this project are welcome. If you have any suggestions, bug repo
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
+
 
 Feel free to modify and customize this template according to your specific needs.
