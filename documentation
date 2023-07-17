@@ -1,0 +1,39 @@
+The provided code is a Python script that demonstrates the process of training a deep learning model for toxicity classification of text comments using the Jigsaw Toxic Comment Classification Challenge dataset. It follows the following steps:
+
+1. Install Dependencies and Bring in Data:
+   - Installs necessary packages using pip.
+   - Imports required libraries, including TensorFlow, pandas, matplotlib, and scikit-learn.
+   - Reads the training data from a CSV file into a pandas DataFrame.
+
+2. Preprocess:
+   - Uses the TensorFlow TextVectorization layer to preprocess the text data.
+   - Adapts the vectorizer to the text data.
+   - Vectorizes the text comments.
+   - Creates a TensorFlow dataset from the vectorized text and labels.
+   - Performs mapping, caching, shuffling, batching, and prefetching operations on the dataset.
+   - Splits the dataset into training, validation, and test sets.
+
+3. Create Sequential Model:
+   - Imports the required layers and models from TensorFlow.
+   - Builds a sequential model for text classification.
+   - Adds an embedding layer, a bidirectional LSTM layer, and several fully connected layers.
+   - Compiles the model with the BinaryCrossentropy loss and Adam optimizer.
+   - Prints a summary of the model architecture.
+   - Trains the model on the training set and validates it on the validation set.
+   - Plots the training and validation loss.
+
+4. Evaluate Model:
+   - Imports the required metrics from TensorFlow.
+   - Computes precision, recall, and accuracy metrics on the test set using the trained model.
+   - Prints the precision, recall, and accuracy values.
+
+5. Test and Gradio:
+   - Installs the Gradio and Jinja2 libraries using pip.
+   - Saves the trained model.
+   - Loads the saved model.
+   - Defines a function to score a comment using the loaded model.
+   - Creates a Gradio interface with a textbox input for user comments and displays the predicted toxicity labels.
+
+This code provides a complete workflow for training a text classification model, evaluating its performance, and deploying it through a user-friendly interface using Gradio.
+
+Please note that the code assumes the presence of the Jigsaw Toxic Comment Classification Challenge dataset and the compatibility of the provided code with your system configuration. Additionally, the code only includes one epoch of training for demonstration purposes, and you may need to adjust the number of epochs for better model performance.
